@@ -1,0 +1,24 @@
+# system cache
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.ink
+
+
+
+# IDE global settings
+.idea/worlspace.xml
+.idea/tasks.xml
+.idea/httpRequests/
+*.iml
+
+
+# environment
+.env
+.env.local
+.env.*.local
+
+# common log
+*.log
+*.tmp
+*.bak
