@@ -22,6 +22,7 @@ create table user(
 
 -- 教师
 create table teacher(
+    id int not null,
     t_id varchar(20) not null,
     t_name varchar(20) not null,
     t_phone varchar(20) not null,
@@ -31,6 +32,7 @@ create table teacher(
 );
 -- 学生
 create table student(
+    id int not null,
     s_id varchar(20) not null,
     s_name varchar(20) not null,
     s_phone varchar(20) not null,
@@ -42,13 +44,13 @@ create table student(
 create table class(
     c_id int not null,
     t_id varchar(20) not null,
-    c_name varchar(20) not null
+    c_name varchar(50) not null
 );
 -- 学科组
 create table subject_group(
     sg_id int not null,
     uid int not null,
-    subject varchar(20)
+    subject varchar(50)
 );
 -- 题库
 create table question_bank(
@@ -58,7 +60,7 @@ create table question_bank(
     question_text Text not null,
     correct_answer TEXT not null,
     difficulty_level tinyint default 1,
-    subject varchar(20) not null,
+    subject varchar(50) not null,
     score decimal(5,2) default 0,
     create_at datetime default current_timestamp not null,
     update_at datetime default  current_timestamp on update current_timestamp
