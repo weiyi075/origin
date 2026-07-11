@@ -2,23 +2,33 @@
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+.DS_Store
 *.ink
-
-
-
 # IDE global settings
+.idea/
 .idea/worlspace.xml
 .idea/tasks.xml
 .idea/httpRequests/
 *.iml
-
-
 # environment
 .env
 .env.local
 .env.*.local
+target/
 
 # common log
 *.log
 *.tmp
 *.bak
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Ignored default folder with query files
+/queries/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+
+
