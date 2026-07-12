@@ -37,7 +37,8 @@ create table student(
 create table class(
     c_id int primary key auto_increment,
     t_id varchar(20) not null,
-    c_name varchar(50) not null
+    c_name varchar(50) not null,
+    invite_code varchar(50) unique not null
 );
 -- 学科组
 create table subject_group(
